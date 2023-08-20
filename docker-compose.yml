@@ -1,0 +1,8 @@
+version: '3'
+services:
+  docker-react:
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "80:80"
