@@ -4,7 +4,7 @@ servies:
   - docker
 
 before_install:
-  - docker build -t ahmed-shakeel/docker-react -f dockerfile.dev
+  - docker build -t ahmed-shakeel/docker-react -f dockerfile.dev .
 
 scripts:
   - docker run -e CI=TRUE ahmed-shakeel/docker-react npm run test -- --coverage
